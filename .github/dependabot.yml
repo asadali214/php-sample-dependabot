@@ -1,0 +1,19 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "composer" # Specifies the package manager
+    directory: "/"               # Root directory of the Composer project
+    schedule:
+      interval: "daily"         # Schedule updates on a weekly basis
+    labels:
+      - "dependencies"          # Adds a label to PRs created by Dependabot
+    commit-message:
+      prefix: "chore: update dependency version" # Prefix for the commit message
+    open-pull-requests-limit: 5 # Maximum number of open PRs at a time
+    rebase-strategy: "auto"     # Automatically rebase when possible
+    assignees:
+      - "your-github-username"  # Assign updates to a specific user
