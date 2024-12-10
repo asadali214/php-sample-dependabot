@@ -1,0 +1,22 @@
+{
+    "name": "asadali214/hello-world",
+    "description": "A simple Hello World package",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "symfony/console": "^3.4",
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HelloWorld\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asad Ali",
+            "email": "14asadali@gmail.com"
+        }
+    ]
+}
